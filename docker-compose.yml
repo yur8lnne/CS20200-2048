@@ -1,0 +1,12 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      DB_PATH: /data/leaderboard.sqlite
+    volumes:
+      - leaderboard-data:/data
+
+volumes:
+  leaderboard-data:
