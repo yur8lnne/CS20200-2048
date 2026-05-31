@@ -14,6 +14,7 @@
     "test:e2e": "npm run build:client && playwright test"
   },
   "dependencies": {
+    "@fable-org/fable-library-js": "2.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "vite": "8.0.11"
