@@ -64,7 +64,7 @@ I believe this change is reasonable because it helps differentiate my project fr
 
 ## Use of Large Language Models
 
-The LLM was mainly used to help convert the original CLI-based 2048 game into a GUI-based game and to assist with the deployment process. It helped me understand how to organize the graphical interface, connect the game logic to the UI, and prepare the project so that it could be run outside the local development environment.
+The LLM was mainly used to help convert the original CLI-based 2048 game into a GUI-based game and to assist with the deployment process. It helped me understand how to organize the graphical interface, connect the game logic to the UI, and prepare the project so that it could be run outside the local development environment. However, the code generated or modified with the help of the LLM still required careful review. I had to spend a significant amount of time checking whether the converted code worked correctly and verifying that the actual game behavior matched my intended requirements.
 
 However, I had to manually modify and re-prompt several parts because the LLM did not fully understand my intended gameplay interaction. In the original CLI version, the game was already designed to be controlled using keyboard arrow keys. Therefore, even after converting the project into a GUI-based game, I wanted to preserve the same keyboard-based control method. However, the LLM initially changed the control method into an unintended touch-slide interaction, where the game was played by swiping or sliding instead of pressing the arrow keys.
 
