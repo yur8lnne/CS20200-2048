@@ -48,3 +48,14 @@ In the original proposal, I planned to develop a CLI-based 2048 game. However, a
 This change does not alter the core concept of the project. The main rules and gameplay of 2048 remain the same: the player moves tiles, combines tiles with the same number, and tries to reach a higher score. The major change is only in the user interface. Instead of controlling the game through text commands in the console, the player can interact with the game through a graphical interface.
 
 I believe this change is reasonable because it helps differentiate my project from other similar proposals while keeping the original idea and requirements mostly intact. It also makes the game more intuitive and visually understandable for players.
+
+
+## Use of Large Language Models
+
+The LLM was mainly used to help convert the original CLI-based 2048 game into a GUI-based game and to assist with the deployment process. It helped me understand how to organize the graphical interface, connect the game logic to the UI, and prepare the project so that it could be run outside the local development environment.
+
+However, I had to manually modify and re-prompt several parts because the LLM did not fully understand my intended gameplay interaction. In the original CLI version, the game was already designed to be controlled using keyboard arrow keys. Therefore, even after converting the project into a GUI-based game, I wanted to preserve the same keyboard-based control method. However, the LLM initially changed the control method into an unintended touch-slide interaction, where the game was played by swiping or sliding instead of pressing the arrow keys.
+
+Because of this, I had to review and modify the input-handling logic in detail. In particular, I needed to adjust the event handling so that the GUI version could respond properly to keyboard arrow key inputs, rather than relying on touch or mouse-based slide interactions.
+
+The main point that the LLM was not able to do correctly was preserving the intended control method while converting the game from CLI to GUI. While it was helpful for building the GUI structure and giving guidance for deployment, it misunderstood how the player should interact with the game. Therefore, I had to manually correct the control logic and verify that the final program matched my intended requirements.
