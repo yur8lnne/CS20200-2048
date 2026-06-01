@@ -2,6 +2,18 @@
 
 SAFE-style F# 2048 web service built with Fable, Elmish, Feliz, Vite, Tailwind, Giraffe/Fable Remoting, and SQLite.
 
+The first screen is the playable game. It supports keyboard play, mobile swipe, undo, themes, board/target settings, local stats, share text, ranked sessions, and a SQLite-backed leaderboard.
+
+## How To Play
+
+- Move tiles with the arrow keys or `W`, `A`, `S`, `D`. On mobile, swipe directly on the board.
+- Tiles slide in the chosen direction. Matching normal tiles merge and increase your score.
+- Three adjacent normal tiles with the same number merge into an `n³` tile, such as `2 2 2` becoming `2³`.
+- An `n³` tile can merge with a normal tile of the same number. It may create a Joker tile; otherwise it creates a normal `4n` tile.
+- A Joker tile `J` can merge with any normal number tile and doubles that number. Jokers do not merge with other Jokers.
+- Use `New Game` to restart and `Undo` to take back a move. Games that use Undo are not ranked on the leaderboard.
+
+
 ## Live demo
 
 ### Play the hosted version on Render: [https://cs20200-2048.onrender.com/](https://cs20200-2048.onrender.com/)
