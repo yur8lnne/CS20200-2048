@@ -2,6 +2,11 @@
 
 SAFE-style F# 2048 web service built with Fable, Elmish, Feliz, Vite, Tailwind, Giraffe/Fable Remoting, and SQLite.
 
+## Live demo
+
+### Play the hosted version on Render: [https://cs20200-2048.onrender.com/](https://cs20200-2048.onrender.com/)
+<br />
+
 ## Requirements
 
 - .NET SDK 10.0.103 or compatible .NET 10 SDK
