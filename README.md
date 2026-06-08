@@ -61,6 +61,7 @@ This change does not alter the core concept of the project. The main rules and g
 
 I believe this change is reasonable because it helps differentiate my project from other similar proposals while keeping the original idea and requirements mostly intact. It also makes the game more intuitive and visually understandable for players.
 
+In addition, I added touch or slide interaction as an extra input method. The original version already supported keyboard-based controls using WASD keys and arrow keys, and these controls are still supported in the final implementation. The touch or slide control was added because the project was converted into a GUI-based game, where this type of interaction can make the game more intuitive and convenient to play.
 
 ## Use of Large Language Models
 
